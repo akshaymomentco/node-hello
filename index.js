@@ -4,8 +4,7 @@ const port = process.env.PORT || 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   const msg = 'Hello Node from Dev Branch!\n'
-  res.send({"message":msg});
-  
+  res.end(msg);
 });
 
 server.listen(port, () => {
